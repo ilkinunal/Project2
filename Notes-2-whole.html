@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ilkin&#39;s webpage</title>
+    <link rel="stylesheet" type="text/css" href="Notes-2.css">
+</head>
+ 
+<body>
+ <h1 class="title">&#34;Introduction to Programming Nanodegree&#34; Notes</h1> 
+  
+
+  <div>
+  <h2>menu </h2>
+    <ul>
+    <li class="sub-menu"><a href="#link1">Web &#38; HTML  for Beginners </a>
+        <ul class="menu">
+          <li class="sub-menu"><a href="#link1.1">Definitions</a></li>
+          <li class="sub-menu"><a href="#link1.2">How the Web Works?</a></li>
+          <li class="sub-menu"><a href="#link1.3">HTML</a></li>
+        </ul>
+    </li>
+    <li class="sub-menu"><a href="#link2">HTML &#38; CSS &#38; DOM</a>
+        <ul class="menu">
+          <li class="sub-menu"><a href="#link2.1">WebPage ingredients</a></li>
+          <li class="sub-menu"><a href="#link2.2">Text Editors for coding</a></li>
+          <li class="sub-menu"><a href="#link2.3">Avoiding Repetition</a></li>
+        </ul>
+    </li>    
+    <li class="sub-menu"><a href="#link3">Python</a>
+        <ul class="menu">
+          <li class="sub-menu"><a href="#link3.1">Introduction to Programming</a></li>
+          <li class="sub-menu"><a href="#link3.2">Variables &#38; Strings &#38; Lists</a></li>
+          <li class="sub-menu"><a href="#link3.3">Input&#8594;Function&#8594;Output</a></li>
+          <li class="sub-menu"><a href="#link3.4">Control Flow &#38; Loops &#38; Operators</a></li>
+        </ul>
+    </li>
+    </ul>
+  </div>
+
+  <div id="link1">
+  <h2> ***Web &#38; HTML for Beginners </h2>
+    <div>
+      <div id="link1.1" class="subtitle"> Definitions </div> 
+      <b> Internet </b> is the global system of interconnected computer networks.
+      <br>The<b> web</b> is the system we use to access the Internet. 
+      <br> <b> HTML </b> stands for <em><b>Hyper Text Markup Language </b></em>  which is the main document type of the web, invented in 1990s.
+      <br> <b> Web browser </b> is a program (Internet Explorer , FireFox, Google Chrome, etc) that is located on the computer that is used to display files on the web.
+      <br> <b> Server </b> is a computer designed to process requests and deliver data to other computers over a local network or the Internet.
+      <br> <b> HTTP </b> stands for <em><b>Hyper Text Transfer Protocol </b></em>  which is the set of rules for transferring files (text, images, sound, video, and other multimedia files) on the World Wide Web.
+    </div> 
+
+    <div>
+    <div id="link1.2" class="subtitle"> How the Web Works? </div>
+      When a user opens a web browser and writes www.udacity.com, the computer sends an HTTP request to a server. The server finds the HTML document and sends it back to the user's computer , the web browser interprets the page and displays it on the user's screen. Click this <a href=" https://www.udacity.com/course/viewer/#!/c-nd000/l-3873828673/e-48329854/m-48480496"> video</a> to watch the detailed explanation.
+    </div>
+
+    <div>
+    <div id="link1.3" class="subtitle"> HTML </div>
+      HTML has &#34;Text content&#34; (what you see), &#34;markup&#34; (what it looks), &#34;references to other documents&#34; (images, videos, etc), &#34;links to other pages&#34;.
+      <br>HTML consists of a series of codes typed into a text-file by the programmer; 
+
+      <ul>
+        <li>  
+        <b>TAGs</b> - use <b> &#60; angle-brackets &#62;</b>,most tags have opening and closing tag, but some called &#34;void&#34; tag which does not require a closing tag. 
+        </li>
+        <li>
+        <b>Element</b> - includes <b>opening tag</b> &#38; <b>content</b> &#38; <b>closing tag</b>. Elements can be <b>inline</b> or <b>block</b>; Block elements create an &#34;invisible box&#34; around the content inside of them, such as &#34;p&#34;, &#34;div&#34;, &#34;form&#34;. &#34;a&#34;, &#34;span&#34;, &#34;br&#34;, &#34;img&#34; and &#34;strong&#34; are all inline elements.
+    	  </li>
+        <li>
+        <b>Attribute</b> - provide additional information about an element , are specified in the opening tag.
+        </li>
+      </ul>
+
+      The Structure of HTML document :
+          <pre>         &#60;html&#62;
+              &#60;head&#62; 
+                 &#60;title&#62; TITLE &#60;&#47;title&#62;
+              &#60;&#47;head&#62;
+              &#60;body&#62;  
+                 &#60;name&#62; CONTENT &#60;&#47;name&#62;
+              &#60;&#47;body&#62; 
+          &#60;&#47;html&#62; 
+          </pre>   
+    </div>
+ 
+  </div>
+  <div id="link2">
+  <h2>***HTML &#38; CSS &#38; DOM </h2>  
+ 
+    <div>
+    <div id="link2.1" class="subtitle"> WebPage ingredients </div>
+      The browser turns HTML &#34;tags&#34; into &#34;elements&#34; that form a &#34;tree&#34;. It knows how to do that because of the <b>DOM</b> &#34;<b>Document Object Model</b>&#34;, which is a standard convention for representing and interacting with elements in HTML. Each HTML tag creates an element in the DOM that the browser uses to display the page.
+      <br>  The document written in HTML defines the <u><b>structure</b></u> and <u><b>content</b></u> of the page.To define the <u><b>style</b></u>, you have to use another language; <b>CSS</b> &#34;<b>Cascading Style Sheets</b>&#34;. CSS is used for describing the look and formatting of a document written in a markup language.
+      <br> DOM -a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.    
+    </div>
+
+    <div>     
+    <div id="link2.2" class="subtitle"> Text Editors for coding </div>
+      <ul>
+        <li>  <b>ScratchPad</b> : beginner friendly, least powerful, sharing is not possible, HTML &#38; CSS </li>
+        <li>  <b>Codepen</b> : powerful, easy for sharing but account needed, HTML &#38; CSS &#38; JavaScript </li>  
+        <li>  <b>Sublime</b> : most powerful,but not quite friendly, difficult to share, all languages</li>
+      </ul> 
+    </div>
+
+    <div>
+    <div id="link2.3" class="subtitle"> Avoiding Repetition </div>
+      Coding principle is <em> don&#39;t repeat yourself (<b>DRY</b>)</em>. Avoiding Repetition makes it easier to create &#38; maintain &#38; expand, less likely for errors and mistakes. Also, it makes it faster loading of web pages, enables the clients to save money on bandwidth and development costs.
+    </div>
+
+  </div>
+
+  <div id="link3">
+  <h2>***Python </h2>
+    <div>
+      <div id="link3.1" class="subtitle"> Introduction to Programming </div> 
+      A <b> computer </b> is a machine that can execute a program. With the right program, a computer can do any mechanical computation you can imagine.
+      <br>A <b>program</b> describes a very precise sequence of steps. Since the computer is just a machine, the program must give the steps in a way that can be executed mechanically. That is, the program can be followed without any thought.
+      <br>A <b>programming language</b> is a language designed for producing computer programs. A good programming language makes it easy for humans to read and write programs that can be executed by a computer. Programmin languages are needed because natural languages are ambiguous and verbose.
+      <br> <b>Python</b> is a programming language. The programs that we write in the Python language will be the input to the <b>Python interpreter</b>, which is a program that runs on the computer. The Python interpreter reads our programs and executes them by following the rules of the Python language.
+      <br> <b>Grammatical structure</b> is very strict, has to match the rules exactly, otherwise interpreter wouldn’t understand it, and gives error.
+      <br> <b>Python expressions</b>:
+          <pre>
+          Expression    &#8594; Expression Operator Expression
+          Expression    &#8594; Number
+          Operator      + - * /
+          Number        0, 1, ...         
+          </pre> 
+      <p>Python problem solving starts with "not panicking". Understanding inputs, outputs &#38; relationships, and creating examples are the basics of it. Starting to write as “pseudocode”, not exactly detailed correct code, helps to start solving. </p>
+      <br>The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely. That's impossible. The trick is to develop a system for finding and fixing them. These strategies help for debugging:
+      <ol>
+        <li> Examine error messages when programs crash (last line)</li>  
+        <li> Work from example code</li>  
+        <li> Make sure examples work</li>
+        <li> Check (print) intermediate results</li>
+        <li> Keep and compare old versions</li>
+      </ol>       
+    </div>
+    <div>
+      <div id="link3.2" class="subtitle"> Variables &#38; Strings &#38; Lists </div> 
+      <b>Variables</b> give programmers a way to give names to values. Variables can be useful to programmers in many ways:
+      <ul>
+        <li> They improve code readability by using names that make sense to humans</li>  
+        <li> They give us a way to store the value of important data</li>  
+        <li> They give us a way to change the value</li>
+      </ul> 
+      The way to introduce a variable is using an assignment statement. We have a name,followed by an equal symbol, followed by an expression:
+      <br> Name = Expression 
+      <br>A <b>string</b> is just a sequence of characters surrounded by quotes. ‘ or “ can be used, but they have to be same at the beginning and end. Examples :
+          <pre>
+          print 4                 >>> output : 4
+          print "4"               >>> output : 4
+          print 4 + 4             >>> output : 8
+          print "4" + "4"         >>> output : 44   note: 4 is a number, “4” is a string        
+          print "hello’           >>> gives error because of the quotes types        
+          </pre> 
+      One of the things we can do with strings that we can't do with numbers, is we can extract subsequences from the strings.If we have a string, we can use the square brackets to extract parts of that string.Indexing a string starts from 0-1-2-3 etc., we can also use negative indexing. Examples: 
+          <pre>
+          ilkin[2]                >>> output : k
+          ilkin[-2]               >>> output : i
+          ilkin[2:3]              >>> output : k
+          ilkin[2:4]              >>> output : ki
+          ilkin[2:]               >>> output : kin
+          </pre> 
+      In addition to using single quotes (') or double quotes (") to create a string, you can also use TRIPLE quotes to create a multi-line string.
+      <br>A <b>List</b> is a more powerful and general type of structured data.  Compared to a string where all of the elements must be characters, in a list the elements can be anything you want such as characters, strings, numbers or even other lists.
+          <pre>
+          String                  List
+          s = 'yabba!'            p = ['y','a','b','b','a','!']                  
+          s[2:4] -> 'bb'          p[2:4] -> ['b','b']
+          </pre> 
+    </div>
+    <div>
+      <div id="link3.3" class="subtitle"> Input&#8594;Function&#8594;Output </div> 
+      <b>Functions</b> (procedure) take inputs, and produce outputs. Function blocks begin with the keyword <b>def</b> followed by the function name and parentheses ( ( ) ). Any input parameters (arguments or operands) should be placed within these parentheses. You can also define parameters inside these parentheses. Every function starts with a colon (:) and is indented.
+      <br>Functions help programmers avoid repetition by re-using the same definition.
+      <br>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
+      <br>Examples:
+          <pre>
+          def square(n):
+            return n * n
+          print square (5)       >>> output : 25
+          def abbaize(a,b):
+            return a + b + b + a
+          print abbaize('a','b') >>> output : abba
+          def abbaize(a,b):
+            c = a + b + b + a
+          print abbaize('a','b') >>> output : None
+          </pre>
+    </div>
+    <div>
+      <div id="link3.4" class="subtitle"> Control Flow &#38; Loops &#38; Operators</div> 
+      Python provides lots of different operators for comparisons, such as greater than (&#62;), less than (&#60;), equal to (==) and not equal to (!=). The output of a comparison is not a number, it is a <b>Boolean</b> value (<b>True</b> or <b>False</b>). 
+      <br>‘==’ for equality comparison, ‘=’ for assignment
+          <pre>
+          i = 21  assingns  21 value to i 
+          i==21   returns True or False
+          </pre>
+      <b>If</b> statement helps to make decision; "if" followed by a comparison (test expression), followed by a colon. And then, inside the "if", there is the block, the block is the code that will run when the test expression is True.
+      <br>If the test expression doesn't evaluate to True, the block doesn't execute. Example :
+          <pre>
+          def bigger(a,b):
+            if a>b:
+              r=a
+            else:
+              r=b
+            return r
+          print bigger(2,9)      >>> output:9
+          </pre>
+      <b>OR</b> operator displays True if either of the expression True. Only False OR False give False.
+      <br><b>While</b> loop is similar to If statement, "While" is followed by a test expression, followed by a colon, and then a "block" has a sequence of instructions. If executes only 1 time, While executes until test expression is False. Example :
+          <pre>
+          def print_numbers (n):
+            i = 1
+            while i &#60; n:
+              print i
+              i = i + 1
+            return i
+          </pre>
+      The <b>append</b> method adds a new element to the end of a list. The append method mutates the list that it is invoked on, it does not create a new list. The syntax for the append method is:
+          <pre>
+          &#60;list&#62;.append(&#60;element&#62;)
+          </pre>
+      The <b> + (concatenation) </b> operator can be used with lists and is very similar to how it is used to concatenate strings. It produces a new list, it does not mutate either of the input lists.
+          <pre>
+          &#60;list&#62; + &#60;list&#62; → &#60;list&#62;
+          </pre>
+      The <b>len (length) </b> operator can be used to find out the length of an object. The len operator works for many things other than lists, it works for any object that is a collection of things including strings. The output from len is the number of elements in its input.
+          <pre>
+          len(&#60;list&#62;) → &#60;number&#62;
+          </pre>
+      Example:
+          <pre>
+          p = &#91;1,2&#93;
+          q = &#91;3,4&#93;
+          p.append&#40;q&#41;
+          p = p + &#91;4,5&#93;
+          len(p)                 >>> output: 5
+          </pre>
+      In Python, there is a more convenient way to loop through the elements of a list: <b>for loop</b>. The loop goes through each element of the list in turn, assigning that element to the &#60;name&#62; and evaluating the &#60;block&#62;. Using the for loop helps to use less code than while loop.
+          <pre>
+          for &#60;name&#62; in &#60;list&#62;:
+          &#60;block&#62;
+          </pre>
+      Example:
+          <pre>
+          def find_element(p,t):
+              i=0
+              for e in p:
+                if e==t:
+                  return i
+                i=i+1
+                return -1
+          </pre>
+
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
